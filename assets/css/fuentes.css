@@ -1,0 +1,55 @@
+/*=====================Fuentes inconsolata=======================*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src:  url('../fonts/Montserrat-Regular_0.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular_0.woff') format('woff'),
+        url('../fonts/Montserrat-Regular_0.ttf') format('ttf'),
+        url('../fonts/Montserrat-Regular_0.eot?#iefix') format('eot');
+}
+
+/*=====================Fuentes inconsolata=======================*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src:  url('../fonts/Montserrat-Bold_0.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold_0.woff') format('woff'),
+        url('../fonts/Montserrat-Bold_0.ttf') format('ttf'),
+        url('../fonts/Montserrat-Bold_0.eot?#iefix') format('eot');
+}
+
+/*=====================Fuentes inconsolata=======================*/
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  src:  url('../fonts/Montserrat-Light_0.woff2') format('woff2'),
+        url('../fonts/Montserrat-Light_0.woff') format('woff'),
+        url('../fonts/Montserrat-Light_0.ttf') format('ttf'),
+        url('../fonts/Montserrat-Light_0.eot?#iefix') format('eot');
+}
+
+/*=====================Fuentes inconsolata=======================*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 100;
+  src:  url('../fonts/Montserrat-LightItalic.woff2') format('woff2'),
+        url('../fonts/Montserrat-LightItalic.woff') format('woff'),
+        url('../fonts/Montserrat-LightItalic.ttf') format('ttf'),
+        url('../fonts/Montserrat-LightItalic.eot?#iefix') format('eot');
+}
+
+/*=====================Fuentes inconsolata=======================*/
+@font-face {
+  font-family: 'Patua';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../fonts/PatuaOne-Regular.woff2') format('woff2'),
+        url('../fonts/PatuaOne-Regular.woff') format('woff'),
+        url('../fonts/PatuaOne-Regular.ttf') format('ttf'),
+        url('../fonts/PatuaOne-Regular.eot?#iefix') format('eot');
+}

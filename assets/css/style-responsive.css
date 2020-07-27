@@ -1,0 +1,217 @@
+/*
+ ==============================================
+ Responsive Style (max-width : 1800px)
+ ==============================================
+*/
+
+@media only screen and (max-width: 1800px) {
+
+}
+
+
+/*
+ ==============================================
+ Responsive Style (max-width : 1600px)
+ ==============================================
+*/
+
+@media only screen and (max-width: 1600px) {
+   
+}
+
+/*
+ ==============================================
+ Responsive Style (max-width : 1400px)
+ ==============================================
+ */
+
+@media only screen and (max-width: 1500px) {
+  
+}
+
+
+/*
+ ==============================================
+ Responsive Style (max-width : 1300px)
+ ==============================================
+ */
+
+@media only screen and (max-width: 1350px) {
+   
+}
+
+
+/*
+ ==============================================
+ Responsive Style (max-width : 1200px)
+ ==============================================
+ */
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+
+
+/*
+ ==============================================
+ Responsive Style (max-width : 940px)
+ ==============================================
+ */
+
+@media only screen and (max-width: 1050px) {
+    
+}
+
+
+/*
+ ==============================================
+ Responsive Style (max-width : 890px)
+ ==============================================
+ */
+
+@media only screen and (max-width: 950px) {
+   
+    
+}
+
+
+/*
+ ==============================================
+ Responsive Style (max-width : 820px)
+ ==============================================
+ */
+
+@media only screen and (max-width: 820px) {
+   
+}
+
+
+/*
+ ==============================================
+ Responsive Style (max-width : 768px)
+ ==============================================
+ */
+
+@media screen and (max-width: 768px) {
+  
+  
+}
+
+
+/*
+ ==============================================
+ Responsive Style (max-width : 568px)
+ ==============================================
+ */
+
+@media screen and (max-width: 568px) {
+
+}
+
+
+/*
+ ==============================================
+ Responsive Style (max-width : 480px)
+ ==============================================
+ */
+
+@media only screen and (max-width: 480px) {
+    /*Menu responsive*/
+    .header, .header_content_info{
+        height: 90px;
+    }
+    .menu_responsive, .close_menu{
+        display: block;
+    }
+    .header_content_img img{
+        width: 230px;
+    }
+    .header_content_info p span{
+        width: 100%;
+        display: block;
+    }
+    .header_content_nav > ul{
+        position: fixed;
+        background: #000;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding-top: 20px;
+        transform: translateX(100%);
+        transition: all 0.5s ease;
+    }
+    .menu_principal.openMenu{
+        transform: translateX(0%);
+    }
+    ul.nav_submenu{
+        position: relative;
+    }
+    .header_content_nav li{
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+    .home_menu{
+        display: none;
+    }
+    .header_input_search{
+        display: none !important;
+    }
+    .header_content_nav{
+        width: 100%;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .header_content_nav span{
+        color: #919191;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+    }
+    .menu_responsive i{
+        color: #7B5E25;
+    }
+    .header_content_info{
+        padding: 5px 0;
+    }
+    li.close_menu{
+        position: absolute;
+        top: 5px;
+        padding-right: 10px;
+        text-align: right;
+    }
+    /*Home*/
+    .home_services_item_text{
+        margin-bottom: 20px;
+    }
+    .title_aliados h2{
+        font-size: 31px;
+    }
+    .footer_content p{
+        padding: 0;
+        font-size: 12px;
+    }
+    .footer_content h4{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .footer_content img{
+        margin: auto !important;
+    }
+    .footer_social{
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+}
+/*
+ ==============================================
+ Responsive Style (max-width : 380px)
+ ==============================================
+ */
+
+@media only screen and (max-width: 380px) {}
