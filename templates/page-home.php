@@ -17,6 +17,9 @@ get_header();
           <div class="swiper-slide">
             <a href="<?= home_url() ?>"><img src="<?= IMGURL ?>slider/banner_1.jpg" alt=""></a>
           </div>
+          <div class="swiper-slide">
+            <a href="<?= home_url() ?>"><img src="<?= IMGURL ?>slider/banner_2.jpg" alt=""></a>
+          </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -37,11 +40,11 @@ get_header();
           <li>
             <a href="<?= home_url('juguetes') ?>">JUGUETES</a>
               <ul class="home_menu_submenu">
-                <li><a href="<?= home_url('') ?>">Dildos</a></li>
-                <li><a href="<?= home_url('') ?>">Vibradores</a></li>
-                <li><a href="<?= home_url('') ?>">Anal</a></li>
-                <li><a href="<?= home_url('') ?>">Lubricantes</a></li>
-                <li><a href="<?= home_url('') ?>">Otros</a></li>
+                <li><a href="<?= home_url('juguetes/dildos/') ?>">Dildos</a></li>
+                <li><a href="<?= home_url('juguetes/vibradores/') ?>">Vibradores</a></li>
+                <li><a href="<?= home_url('juguetes/anal/') ?>">Anal</a></li>
+                <li><a href="<?= home_url('juguetes/lubricantes/') ?>">Lubricantes</a></li>
+                <li><a href="<?= home_url('juguetes/otros/') ?>">Otros</a></li>
               </ul>
           </li>
           <li><a href="<?= home_url('dominic') ?>">DOMINIC</a></li>
@@ -99,7 +102,7 @@ get_header();
         <div class="pure-g">
           <div class="pure-u-1 pure-u-md-1-3">
             <div class="home_novedad_item">
-              <img src="<?= IMGURL ?>" alt="">
+              <img src="<?= IMGURL ?>realist.jpg" alt="">
               <h3>REALISTIC</h3>
               <p>$250.000</p>
               <p><a href="<?= home_url('') ?>"><span>MÁS INFORMACIÓN</span></a></p>
@@ -107,7 +110,7 @@ get_header();
           </div>
           <div class="pure-u-1 pure-u-md-1-3">
             <div class="home_novedad_item">
-              <img src="<?= IMGURL ?>" alt="">
+              <img src="<?= IMGURL ?>jonni.jpg" alt="">
               <h3>JONNI</h3>
               <p>$250.000</p>
               <p><a href="<?= home_url('') ?>"><span>MÁS INFORMACIÓN</span></a></p>
@@ -115,14 +118,14 @@ get_header();
           </div>
           <div class="pure-u-1 pure-u-md-1-3">
             <div class="home_novedad_item">
-              <img src="<?= IMGURL ?>" alt="">
+              <img src="<?= IMGURL ?>fox.jpg" alt="">
               <h3>FOX TAIL PLUG</h3>
               <p>$250.000</p>
               <p><a href="<?= home_url('') ?>"><span>MÁS INFORMACIÓN</span></a></p>
             </div>
           </div>
         </div>
-        <p class="home_novedad_buton"><a href="<?= home_url('') ?>"><span>VER PRODUCTOS</span></a></p>
+        <p class="home_novedad_buton"><a href="<?= home_url('juguetes') ?>"><span>VER PRODUCTOS</span></a></p>
       </div>
     </div>
 
@@ -145,10 +148,10 @@ get_header();
       </div>
       
       <div class="home_aliados_item">
-        <a href="#"><img src="<?= IMGURL ?>aliado_1.jpg" alt=""></a>
+        <a href="https://www.instagram.com/paraisostudiocol/@youtangirls "><img src="<?= IMGURL ?>aliado_1.jpg" alt=""></a>
       </div>
       <div class="home_aliados_item">
-        <a href=""><img src="<?= IMGURL ?>aliado_2.jpg" alt=""></a>
+        <a href="https://www.instagram.com/youtangirls/"><img src="<?= IMGURL ?>aliado_2.jpg" alt=""></a>
       </div>
     </div>
   </main>

@@ -20,10 +20,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
+
 <form role="search" method="get" class="woocommerce-product-search" action="<?php echo esc_url( home_url( 'tienda/' ) ); ?>">
-	<input type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field" placeholder="Buscar..." value="<?php echo get_search_query(); ?>" name="s" />
-	<button type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'woocommerce' ); ?>">
-		<i class="icon-search"></i>
-	</button>
-	<input type="hidden" name="post_type" value="product" />
+	<p>
+        <span class="header_input_search">
+            <button type="submit" value="<?php echo esc_attr_x( 'Search', 'submit button', 'woocommerce' ); ?>">
+                <i class="icon-search"></i>
+            </button>
+            <input type="search" id="woocommerce-product-search-field-<?php echo isset( $index ) ? absint( $index ) : 0; ?>" class="search-field" placeholder="Buscar Producto" value="<?php echo get_search_query(); ?>" name="s" />
+            <input type="hidden" name="post_type" value="product" />
+        </span>
+    </p>
 </form>
+

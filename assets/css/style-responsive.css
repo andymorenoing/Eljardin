@@ -206,6 +206,27 @@
         text-align: center;
         margin-top: 20px;
     }
+
+    /*Juguetes*/
+    .juguetes_content{
+        flex-wrap: wrap;
+    }
+    .juguetes_filter, .juguetes_productos, .juguetes_productos .pure-u-md-1-3{
+        width: 100% !important;
+    }
+    .juguetes_imagenes{
+        flex-wrap: wrap;
+    }
+    .galeria_juguetes, .imagen_principal{
+        width: 100%;
+    }
+    .galeria_juguetes{
+        display: flex;
+    }
+    .galeria_juguetes > div{
+        width: 25% !important;
+    }
+    
     
 }
 /*

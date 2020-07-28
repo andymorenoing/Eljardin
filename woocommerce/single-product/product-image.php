@@ -24,28 +24,35 @@ if ( ! function_exists( 'wc_get_gallery_image_html' ) ) {
 
 global $product;
 
-$post_thumbnail_id  = $product->get_image_id();
-$image_url          = wp_get_attachment_image_url( $post_thumbnail_id, 'full' );
-//Video del poup
-$video 	            = get_post_meta($product->get_id(), 'video_product', true);
+$columns           = apply_filters( 'woocommerce_product_thumbnails_columns', 4 );
+$post_thumbnail_id = $product->get_image_id();
+$wrapper_classes   = apply_filters(
+	'woocommerce_single_product_image_gallery_classes',
+	array(
+		'woocommerce-product-gallery',
+		'woocommerce-product-gallery--' . ( $product->get_image_id() ? 'with-images' : 'without-images' ),
+		'woocommerce-product-gallery--columns-' . absint( $columns ),
+		'images',
+	)
+);
 ?>
-<div class="home_section_1_video_content">   
-    <div class="<?php echo( ( $video != '' ) ? 'woow_popup txt' : 'sin_video' );?>">
-        <img src="<?= $image_url ?>" alt="">
-        <?php
-        if($video != ''){
-            ?>
-            <i class="icon-play3"></i>
-            <div class="popup_content">
-                <div class="modal-content content_video">
-                    <iframe src="https://www.youtube.com/embed/<?= $video ?>?autoplay=1&mute=1&playlist=<?= $video ?>&controls=1&loop=1" frameborder="0"  allowfullscreen></iframe>    
-                </div>
-            </div>
-            <?php
-        }
+<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
+	<figure class="woocommerce-product-gallery__wrapper juguetes_imagenes">
+		<?php
+		if ( $product->get_image_id() ) {
+			$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
+		} else {
+			$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
+			$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src( 'woocommerce_single' ) ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+			$html .= '</div>';
+		}
         ?>
-    </div>        
+        <div class="galeria_juguetes">
+            <?php do_action( 'woocommerce_product_thumbnails' ); ?>
+        </div>
+        <div class="imagen_principal">
+            <?php echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $post_thumbnail_id ); ?>
+        </div>
+       
+	</figure>
 </div>
-<?php
-do_action( 'woocommerce_product_thumbnails' );
-?>

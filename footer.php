@@ -34,6 +34,19 @@
 			<p class="footer_info_copy">Copyright 2020 © El Jardin - Colombia </p>
 		</div>
 	</footer>
+	<div class="content_social_redes">
+		<div class="content_social_redes_sub">
+			<p class="footer_social"> 
+				<a href=""><span><i class="icon-instagram"></i></span></a>
+			</p>
+			<p class="footer_social"> 
+				<a href=""><span><i class="icon-facebook"></i></span></a>
+			</p>
+			<p class="footer_social"> 
+				<a href=""><span><i class="icon-twitter"></i></span></a>
+			</p>
+		</div>
+	</div>
 	<!-- Woow Custom Scripts -->
 	<script type='text/javascript' src='<?php echo JSURL ?>swiper.min.js?ver=<?php echo VCACHE ?>'></script>
 	<!-- Woow Custom Scripts -->

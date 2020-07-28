@@ -56,13 +56,12 @@
 	<header class="woowContentFull header">
 		<div class="woowContent1600 header_content">
 			<div class="header_content_img">
-				<img src="<?= IMGURL ?>logo.png" alt="">
+				<a href="<?= home_url(''); ?>"><img src="<?= IMGURL ?>logo.png" alt=""></a>
 			</div>
 			<div class="header_content_info">
 				<p><span><i class="icon-envelop"></i>CONTACTO</span> <span><i class="icon-phone"></i>(+57) 322 363 0292</span></p>
-				<form action="#">
-					<p><span class="header_input_search"><i class="icon-search"></i><input type="text" placeholder="Buscar Producto"></span></p>
-				</form>
+				<?php get_product_search_form();?>
+				
 				<nav class="header_content_nav">
 					<span class="menu_responsive"><i class="icon-menu"></i>MENÚ</span>
 					<ul class="menu_principal">
@@ -77,11 +76,11 @@
 							?>
 							<a href="<?= $url ?>">JUGUETES <i class="icon-circle-down"></i></a>
 							<ul class="nav_submenu">
-								<li><a href="<?= home_url('') ?>">Dildos</a></li>
-								<li><a href="<?= home_url('') ?>">Vibradores</a></li>
-								<li><a href="<?= home_url('') ?>">Anal</a></li>
-								<li><a href="<?= home_url('') ?>">Lubricantes</a></li>
-								<li><a href="<?= home_url('') ?>">Otros</a></li>
+								<li><a href="<?= home_url('juguetes/dildos/') ?>">Dildos</a></li>
+								<li><a href="<?= home_url('juguetes/vibradores/') ?>">Vibradores</a></li>
+								<li><a href="<?= home_url('juguetes/anal/') ?>">Anal</a></li>
+								<li><a href="<?= home_url('juguetes/lubricantes/') ?>">Lubricantes</a></li>
+								<li><a href="<?= home_url('juguetes/otros/') ?>">Otros</a></li>
 							</ul>
 						</li>
 						<li><a href="<?= home_url('dominic') ?>">DOMINIC</a></li>

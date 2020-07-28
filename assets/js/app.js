@@ -2,7 +2,6 @@ jQuery(function($) {
   var swiper = new Swiper('.swiper-container', {
     pagination: {
       el: '.swiper-pagination',
-      type: 'progressbar',
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -18,5 +17,22 @@ jQuery(function($) {
     $('.menu_principal').removeClass('openMenu');
   });
 
+
+   //Smooth scrolling with links
+  $('a[href*=\\#]').on('click', function(event){     
+    
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+  });
+
+  $('.galeria_juguetes img').on('click', function(e){
+    e.preventDefault();
+    let url = $(this).data('src');
+    $('.imagen_principal img').remove();
+    $('.imagen_principal a').html('<img src="'+url+'"/>')
+  });
+
+  $('.imagen_principal img').on('click', function(e){
+    e.preventDefault();
+  });
   
 });
